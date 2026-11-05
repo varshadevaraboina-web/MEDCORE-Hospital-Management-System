@@ -1,0 +1,136 @@
+.login-page {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #102b46, #2477d4);
+    font-family: "Segoe UI", sans-serif;
+    padding: 20px;
+}
+
+.login-card {
+    width: 100%;
+    max-width: 420px;
+    background: white;
+    padding: 40px;
+    border-radius: 18px;
+    text-align: center;
+    box-shadow: 0 15px 45px rgba(0, 0, 0, 0.2);
+}
+
+.login-logo {
+    width: 65px;
+    height: 65px;
+    margin: 0 auto 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #2477d4;
+    color: white;
+    border-radius: 16px;
+    font-size: 38px;
+}
+
+.login-card h1 {
+    color: #102b46;
+    margin: 8px 0;
+    letter-spacing: 3px;
+}
+
+.login-subtitle {
+    color: #718096;
+    font-size: 14px;
+    margin-bottom: 30px;
+}
+
+.login-card h2 {
+    color: #102b46;
+    margin-bottom: 8px;
+}
+
+.login-description {
+    color: #718096;
+    font-size: 14px;
+    margin-bottom: 25px;
+}
+
+.login-input-group {
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.login-input-group label {
+    display: block;
+    font-weight: 600;
+    color: #334155;
+    margin-bottom: 8px;
+}
+
+.login-input-group input {
+    width: 100%;
+    padding: 13px;
+    border: 1px solid #dce3ec;
+    border-radius: 8px;
+    outline: none;
+    box-sizing: border-box;
+    font-size: 14px;
+}
+
+.login-input-group input:focus {
+    border-color: #2477d4;
+}
+
+.password-wrapper {
+    position: relative;
+}
+
+.password-wrapper input {
+    padding-right: 65px;
+}
+
+.show-password {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    border: none;
+    background: transparent;
+    color: #2477d4;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.login-button {
+    width: 100%;
+    padding: 14px;
+    background: #2477d4;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.login-button:hover {
+    background: #155ca8;
+}
+
+.login-button:disabled {
+    opacity: 0.7;
+    cursor: not-allowed;
+}
+
+.login-error {
+    color: #dc2626;
+    background: #fee2e2;
+    padding: 10px;
+    border-radius: 6px;
+    font-size: 13px;
+}
+
+.login-footer {
+    color: #94a3b8;
+    font-size: 12px;
+    margin-top: 28px;
+}
