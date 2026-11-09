@@ -778,7 +778,10 @@ function App() {
                               <span
                                 className={`status-badge ${(appointment.status || "").toLowerCase()}`}
                               >
-                                {appointment.status}
+                               {appointment.status
+                         ? appointment.status.charAt(0).toUpperCase() +
+                          appointment.status.slice(1).toLowerCase()
+                          : "Pending"}
                               </span>
                             </td>
                           </tr>
@@ -1406,7 +1409,10 @@ function App() {
                           <span
                             className={`status-badge ${(appointment.status || "").toLowerCase()}`}
                           >
-                            {appointment.status}
+                            {appointment.status
+                     ? appointment.status.charAt(0).toUpperCase() +
+                      appointment.status.slice(1).toLowerCase()
+                      : "Pending"}
                           </span>
                         </td>
 
